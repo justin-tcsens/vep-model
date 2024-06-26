@@ -48,3 +48,12 @@
 - Create remaining classes under entity package, with reflect with the database structure.
 - ![image](https://github.com/justin-tcsens/vep-model/assets/102033651/1fc7d8ec-76a9-4938-a9e1-2b0013de7b61)
 
+- Create new repository class, namely ``VepVehicleRepository.java`` under repository package.
+- Following are snapshot of code for the class.
+  ```
+  @Repository
+  public interface VepVehicleRepository extends JpaRepository<VehicleVep, Long> {
+    VehicleVep findByVehicleOwner_VecRegNo(String vecRegNo);
+  }
+
+  ``` 
