@@ -55,5 +55,8 @@
   public interface VepVehicleRepository extends JpaRepository<VehicleVep, Long> {
     VehicleVep findByVehicleOwner_VecRegNo(String vecRegNo);
   }
-
   ``` 
+- Run following maven command to build the artefact.
+```
+.\mvnw clean package install spring-boot:repackage -DskipTests
+```
